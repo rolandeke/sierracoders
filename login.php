@@ -20,8 +20,6 @@
             <h3>Welcome Back Coder.</h3>
             <h4>Login to Continue your Journey With us</h4>
             <form action="login.php" method="post">
-
-
                 <fieldset>
                     <label for="username">Username or email</label><br>
                     <input value="<?php echo $username; ?>" type="text" name="username" placeholder="Username...">
