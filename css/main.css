@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Ubuntu:400,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    /* user-select: none;
+    width: 100%; */
+    /* font-size: .9em;
+    font-weight: lighter; */
+
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    min-height: 100%;
+}
+
+header {
+    background-color: #008489;
+    height: 60px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+
+    height: inherit;
+    margin-left: 2em;
+
+}
+
+header .logo-text {
+    margin: 10px;
+}
+
+header .logo-text a {
+    text-decoration: none;
+}
+
+header .logo-text span {
+    color: #00f7ff;
+}
+
+.logo-text span {
+    color: #00f7ff;
+}
+
+.logo-text a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    float: right;
+    margin: 0 ;
+    padding: 0;
+    list-style-type: none;
+    height: inherit;
+}
+
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+    transition: .6s;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul a {
+    padding: 10px;
+    background-color: white;
+    color: #444;
+    font-size: 1em;
+}
+
+header ul li ul a.logout {
+    color: red;
+}
+
+header ul li ul a:hover {
+    background-color: #848a8b;
+}
+
+header ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: .9s ease-in-out all;
+
+}
+
+header ul li a:hover {
+    background-color: #0a5c5f;
+    transition: .9s;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../assets/images/bg-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    text-transform: capitalize;
+    font-size: 160px;
+    
+}
+
+.jumbotron h1 span {
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+
+}
+
+.wrapper .rightWrapper {
+    padding: 20px 60px;
+}
+
+.rightWrapper .error-span {
+    color: red;
+    font-size: .89em;
+}
+
+.rightWrapper h1 {
+    font-size: 45px;
+}
+
+.rightWrapper h1,
+.rightWrapper p {
+    text-align: center;
+}
+
+.rightWrapper fieldset {
+    margin: 5px 0;
+    border: none;
+
+}
+
+.rightWrapper fieldset input {
+    width: 100%;
+    margin: 2px 0;
+    line-height: 20px;
+    border-radius: 2px;
+    padding: 10px 5px;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+
+}
+
+.rightWrapper fieldset input::placeholder {
+    text-transform: lowercase;
+    
+
+}
+
+.rightWrapper fieldset select {
+    width: 100%;
+    margin: 2px 0;
+    line-height: 20px;
+    border-radius: 2px;
+    padding: 10px 5px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+.rightWrapper fieldset button {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    background-color: #13130f;
+    outline: none;
+    margin-top: 5px;
+}
+
+.leftWrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/images/course05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+
+/*===================================
+=====================================
+    STYLING FOR LOGIN PAGE
+=====================================
+=====================================
+=====================================*/
+.login-wrapper {
+    width: 700px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.login-wrapper .error-span {
+    color: red;
+    font-size: .90em;
+}
+
+.login-wrapper form {
+    margin: 30px auto;
+    padding: 20px;
+    width: 500px;
+}
+
+.login-wrapper h3,
+h4,
+p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: lighter;
+
+}
+
+.login-wrapper fieldset {
+    margin: 10px 0;
+    border: none;
+}
+
+.login-txt {
+    text-transform: capitalize;
+    margin-top: 13px;
+    font-size: 1.3em;
+}
+
+.login-txt a {
+    margin-left: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #444;
+    font-weight: bolder;
+    transition: .7s ease-in-out all;
+}
+
+.login-txt a:hover {
+    color: rgb(41, 237, 255);
+    font-weight: bolder;
+
+}
+
+.login-wrapper fieldset input {
+    width: 100%;
+    margin: 2px;
+    line-height: 20px;
+    border-radius: 2px;
+    padding: 5px 5px;
+    outline: none;
+    border: 1px solid black;
+    font-family: 'Ubuntu'sans-serif;
+
+}
+
+.login-wrapper fieldset input::placeholder {
+    text-transform: lowercase;
+    font-weight: bold;
+
+}
+
+.login-wrapper fieldset select {
+    width: 100%;
+    margin: 2px 0;
+    line-height: 20px;
+    border-radius: 2px;
+    padding: 5px 0;
+    outline: none;
+    border: none;
+}
+
+.login-wrapper fieldset button {
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Ubuntu'sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    background-color: #13130f;
+    outline: none;
+    margin: 5px 0;
+}
+
+
+/*===================================
+=====================================
+    STYLING FOR VERIFICATION PAGE
+=====================================
+=====================================
+=====================================*/
+
+.home {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    border-radius: 8px;
+
+}
+
+.alert-success {
+    background-color: lightgreen;
+    padding: 20px;
+    color: forestgreen;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.home h3 {
+    font-size: 25px;
+    margin: 8px 0 8px 8px;
+}
+
+.alert-warning {
+    background-color: burlywood;
+    padding: 10px;
+    margin-top: 5px;
+    color: black;
+    font-size: 17px;
+}
+
+.home button {
+    margin-top: 8px;
+    width: 100%;
+    padding: 15px 15px;
+    text-align: center;
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+}
+
+/*===================================
+=====================================
+    STYLING FOR FOOTER DIV
+=====================================
+=====================================
+=====================================*/
+
+.footer {
+    background: #303036;
+    color: #d3d3d3;
+    height: 400px;
+    position: relative;
+}
+
+.footer .footer-content {
+    /* border: 1px solid red; */
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: white;
+
+}
+
+.footer .footer-content .about p {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+
+}
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    transition: all .9s;
+
+}
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    margin-left: 15px;
+    transition: all .9s;
+}
+.footer .footer-content .contact-form fieldset{
+    width:300px;
+    
+    border: none;
+}
+.footer .footer-content .contact-form fieldset .contact-input{
+   width: 100%;
+   padding: .9em 1.4em;
+   color: #bebdbd;
+   background-color: #272727;
+   margin-bottom: 10px;
+   line-height: 1.5rem;
+   border: none;
+   
+}
+.footer .footer-content .contact-form fieldset .contact-input:focus{
+    background: #1a1a1a;
+    outline: none;
+}
+.footer .footer-content .contact-form fieldset button{
+    padding: 10px 15px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Ubuntu'sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    color: #fff;
+    background-color: #13130f;
+    outline: none;
+    margin-top: 10px;
+}
+
+
+
+
+#banner{
+	min-height: 100vh;
+	background:
+	linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+	,url(../assets/images/bg-banner.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-text{
+    font-size: 130px;
+	text-transform: capitalize;
+	color: #e0e2db;
+	
+}
+.banner-underline{
+	width: 200px;
+	border: 3px solid #191716;
+	margin: 10px auto 20px auto;
+}
+
+.banner-btn{
+	display: flex;
+	justify-content: space-between;
+}
+.banner-btn button{
+	font-size: 30px;
+	padding:15px;
+	text-transform: uppercase;
+	margin: 0 10px;
+	background: transparent;
+	color: #e6af2e;
+	border: 2px solid #e6af2e;
+}
+.banner-btn button:hover{
+	color: #e0e2db;
+	background: #e6af2e;
+}
+
+
+
+
+/*===================================
+=====================================
+    MEDIA QUERY FOR RESPONSIVE DESIGN
+    WHEN THE SCREEN SIZE IS AT 320PX
+=====================================
+=====================================
+=====================================*/
+
+
+@media screen and (max-width:320px) {
+    /* .container {} */
+
+
+}
+
+/*===================================
+=====================================
+    MEDIA QUERY FOR RESPONSIVE DESIGN
+    WHEN THE SCREEN SIZE IS AT 750PX
+=====================================
+=====================================
+=====================================*/
+@media only screen and (max-width: 750px) {
+
+    /*===================================
+=====================================
+    RESPONSIVE STYLING FOR HEADER
+=====================================
+=====================================
+=====================================*/
+    .container {
+
+        padding: 10px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header ul {
+        width: 100%;
+        background: #0E94A0;
+        max-height: 0px;
+        overflow: hidden;
+
+    }
+
+    .show {
+        max-height: 100em;
+        overflow: visible;
+    }
+
+    header ul li {
+        width: 100%;
+        background: inherit;
+    }
+
+    header ul li ul {
+        position: static;
+        display: none;
+        width: 100%;
+        background: inherit;
+    }
+
+    header ul li ul a {
+        padding: 10px;
+        background: #0E94A0;
+        color: white;
+        padding-left: 60px;
+    }
+
+    header ul li ul a.logout {
+        color: red;
+    }
+
+    header .menu-toggle {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 13px;
+        font-size: 1.9em;
+        font-weight: bolder;
+    }
+
+    header .logo {
+        margin-left: .5em;
+
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .jumbotron {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(90, 88, 88, 0.356), rgba(0, 0, 0, 0.5)), url(../assets/images/bg-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        font-weight: lighter;
+        font-family: 'Ubuntu', sans-serif;
+        color: #fff;
+    }
+
+    .jumbotron h1 {
+        text-transform: capitalize;
+        font-size: 45px;
+    }
+
+
+    .inner-footer {
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+
+    .inner-footer>div {
+        padding: 5px 5px;
+        text-align: left;
+    }
+
+    .topBanner {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+
+    .topBanner a:first-child {
+        text-align: center;
+    }
+
+    .topBanner nav a {
+        display: block;
+        width: 100%;
+    }
+
+    .home {
+        width: 95%;
+        margin: 150px auto;
+        padding: 10px;
+        background: #fff;
+        color: black;
+        border-radius: 8px;
+        border: 1px solid lightskyblue;
+    }
+
+    .home .alert-warning {
+        background-color: burlywood;
+        padding: 5px;
+        margin-top: 5px;
+        color: chocolate;
+        font-size: 15px;
+    }
+
+    .home .alert-warning strong {
+        font-size: 12px;
+        font-weight: bolder;
+
+    }
+
+    .home a {
+        text-decoration: none;
+        color: red;
+        font-size: 10px;
+    }
+
+    .home h3 {
+        font-size: 16px;
+        margin: 5px 0 0 8px;
+    }
+
+
+    .login-wrapper {
+        width: 100%;
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .login-wrapper .error-span {
+        color: red;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .login-wrapper form {
+        margin: 30px auto;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .login-wrapper h3,
+    h4,
+    p {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+
+    .login-wrapper fieldset {
+        margin: 20px 0;
+        border: none;
+    }
+
+    .login-wrapper fieldset input {
+        width: 100%;
+        margin: 8px 0;
+        line-height: 20px;
+        border-radius: 2px;
+        padding: 5px 5px;
+        outline: none;
+        border: 1px solid black;
+        font-family: 'Ubuntu'sans-serif;
+
+    }
+
+    .login-wrapper fieldset input::placeholder {
+        text-transform: lowercase;
+        font-weight: bold;
+
+    }
+
+    /* .login-wrapper fieldset select {
+        width: 100%;
+        margin: 2px 0;
+        line-height: 20px;
+        border-radius: 2px;
+        padding: 5px 0;
+        outline: none;
+        border: none;
+    } */
+
+    .login-wrapper fieldset button {
+        padding: 10px 15px;
+        font-size: 25px;
+        border-radius: 5px;
+        border: none;
+        font-family: 'Ubuntu'sans-serif;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        color: #fff;
+        background-color: #13130f;
+        outline: none;
+        margin-top: 10px;
+    }
+
+
+}
